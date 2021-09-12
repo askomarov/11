@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('html/head.html', {
+"title": "ProOrb",
+"description": "page description by include"
+})
+
+<body>
+  <div class="page container page__container">
+    @@include('html/svg-sprite.html')
+
+
+    <main class="main page__main">
+
+      <!-- Slider main container -->
+      <div class="swiper slider proorb-slider">
+        <div class="proorb-slider__header">
+          @@include('html/header.html')
+        </div>
+
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper swiper-slider proorb-slider__list">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            @@include('html/promo-slide.html')
+          </div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+          <div class="swiper-slide">Slide 4</div>
+          <div class="swiper-slide">Slide 5</div>
+          <div class="swiper-slide">Slide 6</div>
+          <div class="swiper-slide">Slide 7</div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="proorb-slider__footer">
+          <div class="swiper-pagination proorb-pagination"></div>
+
+          <div class="proorb-slider__footer-bts">
+            <div class="swiper-button-prev">
+              <svg width="26" height="12">
+                <use href="#icon-arrow"></use>
+              </svg>
+            </div>
+            <div class="swiper-button-next">
+              <svg width="26" height="12">
+                <use href="#icon-arrow"></use>
+              </svg>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </main>
+
+  </div>
+
+  <script src="js/vendor.js"></script>
+  <script src="js/main.min.js"></script>
+
+</body>
+
+</html>
