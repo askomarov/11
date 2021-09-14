@@ -109,7 +109,12 @@
   justify-items: center;
   font-size: 0;
   color: #fff;
+  justify-content: center;
   position: relative;
+
+  @media (min-width: $width-tablet+px) {
+    justify-content: flex-start;
+  }
 }
 
 .swiper-pagination-bullet {

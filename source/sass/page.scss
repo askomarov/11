@@ -3,19 +3,27 @@
   flex-direction: column;
   justify-content: flex-start;
   position: relative;
-  padding-top: var(--header-heigt);
 }
 
 .page__main {
   flex-grow: 1;
-  height: calc(756px - var(--header-heigt));
+  min-height: calc(756px - var(--header-height));
 }
 
 .page__container {
-  min-height: 756px;
+  height: auto;
   background: #0d1e32;
   border: 1px solid #ffffff;
   border-radius: 24px;
   color: #ffffff;
   overflow: hidden;
+  margin: 30px 20px;
+  min-height: 756px;
+  @media (min-width: $width-tablet+px) {
+  }
+
+  @media (min-width: $width-desktop+px) {
+    margin: 72px auto;
+    max-width: $max-width + px;
+  }
 }

@@ -17,23 +17,23 @@ const initSwiperSlider = () => {
           return `<span class="${className}">${index + 1}</span>`;
         },
       },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+      breakpoints: {
+        1024: {
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          //     slidesPerView: 3,
+          //     slidesPerGroup: 3,
+          //     pagination: {
+          //       el: '.swiper-pagination',
+          //       type: 'bullets',
+          //       renderBullet: function (index, className) {
+          //         return `<span class="${className}">${index + 1}</span>`;
+          //       },
+          //     },
+        },
       },
-      // breakpoints: {
-      //   1024: {
-      //     slidesPerView: 3,
-      //     slidesPerGroup: 3,
-      //     pagination: {
-      //       el: '.swiper-pagination',
-      //       type: 'bullets',
-      //       renderBullet: function (index, className) {
-      //         return `<span class="${className}">${index + 1}</span>`;
-      //       },
-      //     },
-      //   },
-      // },
     });
   }
 };
