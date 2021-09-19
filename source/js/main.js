@@ -9,6 +9,7 @@ const initSwiperSlider = () => {
       spaceBetween: 130,
       slidesPerGroup: 1,
       loop: false,
+      autoHeight: true,
       pagination: {
         el: '.swiper-pagination',
         type: 'bullets',

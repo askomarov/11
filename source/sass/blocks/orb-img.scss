@@ -1,0 +1,46 @@
+.orb-img {
+  border-radius: 50%;
+  width: 100%;
+  aspect-ratio: 1/1;
+  height: auto;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    mix-blend-mode: overlay;
+    filter: blur(90px);
+    background: #1a3c64;
+    z-index: 5;
+  }
+
+  @media (min-width: $width-tablet+px) {
+    width: 603px;
+    height: 603px;
+  }
+}
+
+.orb-img__img-wpar {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 10;
+  
+  @media (max-width: $width-tablet+px) {
+    img {
+      width: 50%;
+      height: auto;
+      top: 0;
+      left: 0;
+      object-fit: contain;
+    }
+  }
+}
